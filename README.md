@@ -1,5 +1,24 @@
 # Kalavale
 
+```
+Tuonne Tuonelan joesta,
+halki haukkua hipua,
+poika pursi puut purohon,
+kaikki kansan kauneutta,
+
+Lemminkäisen leikkeänsä,
+katsahtani kaikerosta,
+sinisukka äijön lapsi,
+katselevi, kääntelevi,
+
+kun ei tyttö pyyettäne,
+vastan vaskisen varavan,
+kun venynnä kyntämätä,
+rauta rautaisen haravan.
+
+   --Kalavale-generaattori
+```
+
 28. helmikuuta on Kalevalan päivä, suomalaisen kulttuurin päivä.
 
 Kalevalan päivän kunniaksi pieni neuroverkkojumppa, jossa luodaan uusi kalevalahenkinen runo käyttäen lähdeaineistona alkuperäistä Elias Lönnrotin Kalevalaa. Kalevala on kokonaisuudessaan verkossa saatavilla mm. Project Gutenbergin (www.gutenberg.org) alla osoitteessa: https://www.gutenberg.org/ebooks/7000
@@ -49,3 +68,11 @@ Epoch 5/20
 Tälle projektille voidaan pystyttää Dockerilla kehitysympäristökontti ja ladata siihen kaikki tarvittavat työkalut valmiiksi. ~~Tätä varten katso Dockerfile.~~
 
 Docker Desktopista löytyy valmis työkalu Dev Environments, jolla voi pystyttää kehityskontin hyvin helposti.
+
+Repoon on sisällytetty myös treenauksesta saadut painot, mallin asetukset ja käytetty sanasto.
+
+### Lopputulos
+
+Malli on ajettu oletusasetuksilla ja sitä on treenattu vain 20 generaatiota. Mallia voisi tarkentaa ja kokeilla myös erilaisia neuroverkkoja tähän. Nyt monet mallin generoimat lauseet ovat sanasta sanaan suoraan Kalevalasta tai sitten kaksi kolmesta lauseen sanasta sellaisenaan suoraan. Sinänsä kuitenkin mielenkiintoista, että säkeet kuitenkin ovat ymmärrettäviä sanoja ja runomuoto anteeksiantaa sen verran, että myös tarina välittyy säkeistä.
+
+Sen verran fuskasin, että järjestin säkeet uudelleen, mutta säkeet itsessään ovat suoraan mallin generoimia.
