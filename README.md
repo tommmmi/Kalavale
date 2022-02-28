@@ -46,4 +46,4 @@ Epoch 5/20
 1141/2980 [==========>...................] - ETA 4:42 - loss: 1.3520
 ```
 
-Tälle projektille voidaan pystyttää Dockerilla kätevä kehitysympäristökontti ja ladata siihen kaikki tarvittavat työkalut valmiiksi. Tätä varten katso Dockerfile.
+Tälle projektille voidaan pystyttää Dockerilla kehitysympäristökontti ja ladata siihen kaikki tarvittavat työkalut valmiiksi. ~~Tätä varten katso Dockerfile.~~ Docker Desktopista löytyy valmis työkalu Dev Environments, jolla voi pystyttää kehityskontin hyvin helposti.
