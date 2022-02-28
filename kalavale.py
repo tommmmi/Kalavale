@@ -53,21 +53,26 @@ runot = etsi_korvaa(kalevala[ensimRuno:kirjaLoppuu], '\r\n')
 
 ### NEUROVERKOT
 
-# työkalujen alustus
-textgen = textgenrnn()
-textgen.reset()
+# työkalujen alustus, kun teet alusta ensikertaa
+kalavale = textgenrnn()
+kalavale.reset()
 
 ## neuroverkon treenaus:
 # treenataan 20 generaatiota, joista
 # neljän välein testigeneraatio,
 # käytetään treenaukseen 70% datasta, ja
 # pudotetaan tällä generaatiolla pois 20% neuroverkon edellisellä generaatiolla saamista tokeneista
-textgen.train_on_texts(runot, new_model=True, num_epochs=20, gen_epochs=4, train_size=0.7, dropout=0.2)
+kalavale.train_on_texts(runot, new_model=True, num_epochs=20, gen_epochs=4, train_size=0.7, dropout=0.2)
 
 
 
 # generoidaan uusia säkeitä
-i = 0
-while i < 10:
-    textgen.generate()
-    i = i+1
+kalavale.generate_samples(12)
+
+
+
+# jo-treenatun mallin käyttöönotto
+kalavale = textgenrnn(weights_path = "kalavale_weights.hdf5", vocab_path = "kalavale_vocab.json", config_path = "kalavale_config.json", name="kalavale")
+
+# generoidaan uusia säkeitä
+kalavale.generate_samples(12)
