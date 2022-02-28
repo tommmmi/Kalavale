@@ -22,7 +22,8 @@ Epoch 2/20
 Epoch 3/20
 2980/2980 [==============================] - 570s 191ms/step - loss: 1.4625 - val_loss: 1.4422 - lr: 0.0036
 Epoch 4/20
-2980/2980 [==============================] - ETA: 0s - loss: 1.3969
+2980/2980 [==============================] - 578s 194ms/step - loss: 1.3969 - val_loss: 1.4070 - lr: 0.0034
+
 ####################
 Temperature: 0.2
 ####################
@@ -41,9 +42,10 @@ jos mulla meren metsälle,
 
 itse tuon sisarutahan,
 
-2980/2980 [==============================] - 578s 194ms/step - loss: 1.3969 - val_loss: 1.4070 - lr: 0.0034
 Epoch 5/20
 1141/2980 [==========>...................] - ETA 4:42 - loss: 1.3520
 ```
 
-Tälle projektille voidaan pystyttää Dockerilla kehitysympäristökontti ja ladata siihen kaikki tarvittavat työkalut valmiiksi. ~~Tätä varten katso Dockerfile.~~ Docker Desktopista löytyy valmis työkalu Dev Environments, jolla voi pystyttää kehityskontin hyvin helposti.
+Tälle projektille voidaan pystyttää Dockerilla kehitysympäristökontti ja ladata siihen kaikki tarvittavat työkalut valmiiksi. ~~Tätä varten katso Dockerfile.~~
+
+Docker Desktopista löytyy valmis työkalu Dev Environments, jolla voi pystyttää kehityskontin hyvin helposti.
